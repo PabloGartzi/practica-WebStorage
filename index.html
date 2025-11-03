@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Tarea Pablo y Sonia</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>hola</h1>
     <form  
         enctype="multipart/form-data" 
         name="formularioDeProductos" 
@@ -15,14 +14,14 @@
         id = "miFormulario">
         <!--================== Campos del formulario aquí ==================-->
         
-        <label for="producto">Introduce el producto:</label>
-        <input type="text" id="producto" name="producto" required>
-        <input type="submit" id="introducirProducto" name="introducirProducto">Agregar Producto</button>
+        <label for="producto" class="tituloLabel">Introduce el producto:</label>
+        <input type="text" id="producto" name="producto" required autofocus>
+        <input type="submit" id="introducirProducto" name="introducirProducto" value="Agregar producto" class="estiloBotones">
     </form>
 
         <!--================== HUECO PARA LA TABLA ==================-->
         <div id="tablaProductos"></div>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

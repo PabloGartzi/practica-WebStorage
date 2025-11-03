@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*ESTILO DEL FORMULARIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    border: 4px solid rgb(3, 53, 95);
+    border-radius: 20px;
+    padding: 1.4rem;
+    box-shadow: 0 5px 10px black;
+    color: rgb(3, 53, 95);
+}
+
+form * {
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.tituloLabel {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+input {
+    outline: none; /* Elimina el contorno por defecto */
+    color: rgb(241, 122, 3);
+    border: 3px solid rgb(241, 122, 3);
+
+}
+
+/*ESTILO DE LA TABLA*/
+table {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table * {
+    border: 1px solid black;
+    padding: 1.2rem;
+}
+
+/*encabezados de la tabla => th */
+table th {
+    background-color: rgb(31, 81, 123);
+    color: white;
+    text-transform: uppercase;
+}
+
+/*ESTILO DE BOTONES*/
+
+.estiloBotones {
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(222, 239, 255);
+    color: rgb(3, 53, 95);
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.estiloBotones:hover {
+    background-color: rgb(31, 81, 123);
+    color: white;
+}
