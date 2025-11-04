@@ -13,7 +13,7 @@ const divTabla = document.querySelector("#tablaProductos");
 miFormulario.addEventListener('submit', (ev) => {
     ev.preventDefault();
     validarFormularioIntroducir();
-    agregarProducto();
+    //agregarProducto();
 });
 
 
@@ -49,7 +49,8 @@ const validarFormularioIntroducir = () => {
     }
 
     if (valido) {
-        miFormulario.submit();
+        //miFormulario.submit();
+        agregarProducto();
     }
 }
 
@@ -76,6 +77,8 @@ const agregarProducto = () => {
         productos.push(producto);
     }
     localStorage.setItem("productos", JSON.stringify(productos));
+    eliminarElemento(divTabla);
+    pintarTabla();
 }
 
 /**
